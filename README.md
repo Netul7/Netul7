@@ -40,7 +40,7 @@ robotic systems.
 
 ## 📌 Featured Projects
 
-### Online Payload Parameter Estimation for Robotic Manipulators
+### 1) Online Payload Parameter Estimation for Robotic Manipulators
 **Master's thesis project (UNAM)** · MDREM · C++ · ROS 2 · MATLAB/Simulink
 
 Implementation and experimental validation of an online parameter estimation
@@ -64,14 +64,6 @@ on two platforms: one developed in Mexico and one during a research stay in Fran
 > 🔗 [View repository](https://github.com/Netul7/payload-online-estimation-manipulators-)
 > · [Geomagic Touch](https://github.com/Netul7/payload-online-estimation-manipulators-/tree/main/1_geomagic_touch)
 > · [Franka Research 3](https://github.com/Netul7/payload-online-estimation-manipulators-/tree/main/2_franka_research_3)
-
----
-
-## 📈 Current Interests
-
-- Advanced control for robotic manipulation
-- Real-time estimation and adaptation in robot dynamics
-- Model-based + learning-enhanced control strategies
 
 ---
 
