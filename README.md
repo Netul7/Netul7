@@ -1,7 +1,13 @@
 # Hi, I'm Ernesto 👋  
-### Robotics & Control Systems Engineer (M.Sc.)
+### Mechanical & Electrical Engineer | M.Sc. in Electrical Engineering (Control)
 
-I work on robotics and advanced control, with interest in applying model-based and advanced control techniques to real robotic systems.
+M.Sc. in Electrical Engineering (Control) from UNAM, with a thesis on online load
+parameter estimation for robot manipulators. I implemented the algorithm in C++ and
+validated it experimentally on the Geomagic Touch (3-DOF) and Franka Research 3
+(7-DOF) during a research stay in France.
+
+I'm interested in applying model-based and advanced control techniques to real
+robotic systems.
 
 ---
 
@@ -34,25 +40,30 @@ I work on robotics and advanced control, with interest in applying model-based a
 
 ## 📌 Featured Projects
 
-### 1) Online Payload Parameter Estimation for Geomagic Touch
-**Master’s thesis project** focused on online estimation of payload-related parameters, with emphasis on gravity torque compensation terms.
+### Online Payload Parameter Estimation for Robotic Manipulators
+**Master's thesis project (UNAM)** · MDREM · C++ · ROS 2 · MATLAB/Simulink
 
-- Developed and validated an online parameter estimation algorithm
-- Evaluated estimation behavior under different operating conditions
-- Connected identified parameters to improved model-based compensation
+Implementation and experimental validation of an online parameter estimation
+algorithm based on **Modified Dynamic Regressor Extension and Mixing (MDREM)**
+for identifying payload parameters in robot manipulators. The method was tested
+on two platforms: one developed in Mexico and one during a research stay in France.
 
-> Repo link: *(add your repository URL here)*
+#### 🇲🇽 Part 1: Geomagic Touch (3-DOF) · Mexico
+- Estimated the full set of robot and payload parameters (10 parameters) online
+- Built a MATLAB/Simulink simulation in which all parameters converged in under 0.5 s
+- Ran experiments on the real robot in C++ (Visual Studio) and validated the
+  gravity-related parameters through a gravity compensation test
 
----
+#### 🇫🇷 Part 2: Franka Research 3 (7-DOF) · France
+- Implemented the estimator in C++ with ROS 2 on Ubuntu
+- Estimated the payload's inertial parameters (mass, center of mass, inertia tensor)
+  using a Newton–Euler formulation
+- Obtained estimates close to the true values with a 1.4 s trajectory, despite the
+  uncertainty in the robot's link parameters
 
-### 2) Online Payload Parameter Estimation for Franka Research 3 (FR3)
-Applied online estimation techniques to the **Franka Research 3 (FR3)** manipulator, focusing on payload parameter effects on gravity-related torques.
-
-- Built robot dynamic model components relevant to gravity compensation
-- Implemented estimation workflow for payload-related parameters
-- Analyzed parameter convergence and practical compensation impact
-
-> Repo link: *(add your repository URL here)*
+> 🔗 [View repository](https://github.com/Netul7/payload-online-estimation-manipulators-)
+> · [Geomagic Touch](https://github.com/Netul7/payload-online-estimation-manipulators-/tree/main/1_geomagic_touch)
+> · [Franka Research 3](https://github.com/Netul7/payload-online-estimation-manipulators-/tree/main/2_franka_research_3)
 
 ---
 
